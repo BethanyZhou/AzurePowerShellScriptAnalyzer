@@ -1,2 +1,0 @@
-
-Reset-AzHubRouter -InputObject $virtualHub

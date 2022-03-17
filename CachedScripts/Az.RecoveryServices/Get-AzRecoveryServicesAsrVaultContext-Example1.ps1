@@ -1,2 +1,0 @@
-
-$VaultSettings = Get-AzRecoveryServicesAsrVaultContext

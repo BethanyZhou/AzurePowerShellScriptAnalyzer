@@ -1,2 +1,0 @@
-
-Remove-AzDataBoxEdgeDevice ResourceGroupName resourceGroupName -Name deviceName

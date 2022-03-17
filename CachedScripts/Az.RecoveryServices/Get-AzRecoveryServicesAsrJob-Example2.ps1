@@ -1,2 +1,0 @@
-
-Get-AzRecoveryServicesAsrJob -Job $Job

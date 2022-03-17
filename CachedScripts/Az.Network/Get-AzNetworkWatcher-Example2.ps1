@@ -1,2 +1,0 @@
-
-Get-AzNetworkWatcher -Name NetworkWatcher*

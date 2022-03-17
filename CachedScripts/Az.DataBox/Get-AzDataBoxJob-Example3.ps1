@@ -1,2 +1,0 @@
-
-Get-AzDataBoxJob -ResourceGroupName "resourceGroupName"

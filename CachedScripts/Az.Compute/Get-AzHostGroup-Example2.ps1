@@ -1,2 +1,0 @@
-
-Get-AzHostGroup -ResourceGroupName $resourceGroupName

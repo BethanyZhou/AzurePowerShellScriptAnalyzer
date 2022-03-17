@@ -1,2 +1,0 @@
-
-Enable-AzFrontDoorCustomDomainHttps -ResourceId $resourceId

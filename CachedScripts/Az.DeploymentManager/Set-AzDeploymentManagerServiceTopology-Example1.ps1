@@ -1,2 +1,0 @@
-
-Set-AzDeploymentManagerService -InputObject $serviceTopologyObject

@@ -1,2 +1,0 @@
-
-Get-AzKustoCluster -ResourceGroupName testrg

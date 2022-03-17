@@ -1,2 +1,0 @@
-
-Get-AzSynapseSqlPoolRestorePoint -ResourceGroupName ContosoResourceGroup -WorkspaceName ContosoWorkspace -Name ContosoSqlPool

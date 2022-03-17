@@ -1,2 +1,0 @@
-
-Get-AzPolicyAlias -ApiVersionMatch 'alpha'

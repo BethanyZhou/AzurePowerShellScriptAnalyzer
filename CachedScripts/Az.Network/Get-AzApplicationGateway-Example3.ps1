@@ -1,2 +1,0 @@
-
-$AppGwList = Get-AzApplicationGateway

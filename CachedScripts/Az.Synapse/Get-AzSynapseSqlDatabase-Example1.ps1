@@ -1,2 +1,0 @@
-
-Get-AzSynapseSqlDatabase -WorkspaceName ContosoWorkspace

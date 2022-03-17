@@ -1,2 +1,0 @@
-
-$clusterResource | Get-AzManagedCassandraDataCenter

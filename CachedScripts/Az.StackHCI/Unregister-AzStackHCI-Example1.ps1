@@ -1,2 +1,0 @@
-
-Unregister-AzStackHCI

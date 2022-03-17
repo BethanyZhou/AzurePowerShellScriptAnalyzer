@@ -1,2 +1,0 @@
-
-Get-AzADUser -DisplayName $name

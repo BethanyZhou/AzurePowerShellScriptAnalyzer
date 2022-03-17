@@ -1,2 +1,0 @@
-
-Get-AzDataBoxEdgeStorageAccount -DeviceObject $dbEdge

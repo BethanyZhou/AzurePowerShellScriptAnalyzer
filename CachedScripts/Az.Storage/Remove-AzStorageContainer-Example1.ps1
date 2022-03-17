@@ -1,2 +1,0 @@
-
-Remove-AzStorageContainer -Name "MyTestContainer"

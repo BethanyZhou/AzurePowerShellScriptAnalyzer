@@ -1,2 +1,0 @@
-
-Get-AzVirtualWan -Name test*

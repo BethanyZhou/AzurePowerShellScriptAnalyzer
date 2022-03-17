@@ -1,2 +1,0 @@
-
-Get-AzPolicyEvent -ManagementGroupName "myManagementGroup"

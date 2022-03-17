@@ -1,2 +1,0 @@
-
-New-AzVMwarePrivateCloudVcenterPassword -ResourceGroupName azps_test_group -PrivateCloudName azps_test_cloud -PassThru

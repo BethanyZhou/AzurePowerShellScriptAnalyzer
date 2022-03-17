@@ -1,2 +1,0 @@
-
-Get-AzCognitiveServicesAccountUsage -ResourceGroupName TestUsages -Name TestCVUsages_Prediction

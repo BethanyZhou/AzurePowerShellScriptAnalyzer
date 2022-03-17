@@ -1,2 +1,0 @@
-
-Remove-AzStorageTable -Name "TableABC"

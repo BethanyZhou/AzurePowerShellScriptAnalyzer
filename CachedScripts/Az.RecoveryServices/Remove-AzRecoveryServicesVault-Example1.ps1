@@ -1,2 +1,0 @@
-
-Remove-AzRecoveryServicesVault -Vault $vault

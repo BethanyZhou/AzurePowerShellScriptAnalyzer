@@ -1,2 +1,0 @@
-
-Connect-AzAccount -AuthScope Storage

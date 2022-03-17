@@ -1,2 +1,0 @@
-
-Save-AzDeploymentTemplate -DeploymentName "TestDeployment"

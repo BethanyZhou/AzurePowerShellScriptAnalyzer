@@ -1,2 +1,0 @@
-
-Remove-AzLoadBalancerBackendAddressPool -InputObject $backendPoolObject

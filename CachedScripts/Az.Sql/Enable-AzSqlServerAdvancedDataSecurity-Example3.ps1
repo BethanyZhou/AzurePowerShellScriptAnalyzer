@@ -1,2 +1,0 @@
-
-Enable-AzSqlServerAdvancedDataSecurity -DoNotConfigureVulnerabilityAssessment -ResourceGroupName MyResourceGroup -ServerName s1

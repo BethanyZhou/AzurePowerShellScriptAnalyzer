@@ -1,2 +1,0 @@
-
-Get-AzRecoveryServicesAsrPolicy -FriendlyName abc

@@ -1,2 +1,0 @@
-
-Invoke-AzSynapseDetachKustoPoolFollowerDatabase -ResourceGroupName testrg -WorkspaceName testws -KustoPoolName testkustopool -AttachedDatabaseConfigurationName "myfollowerconfiguration" -KustoPoolResourceId "/subscriptions/$subscriptionId/resourcegroups/testrg/providers/Microsoft.Synapse/workspaces/testws/kustoPools/testfollowerkustopool"

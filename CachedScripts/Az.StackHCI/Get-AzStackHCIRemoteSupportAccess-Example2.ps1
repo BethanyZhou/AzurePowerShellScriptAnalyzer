@@ -1,2 +1,0 @@
-
-Get-AzStackHCIRemoteSupportAccess -Cluster -IncludeExpired

@@ -1,2 +1,0 @@
-
-Get-AzVpnSite -Name test*

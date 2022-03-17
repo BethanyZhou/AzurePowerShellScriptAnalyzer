@@ -1,2 +1,0 @@
-
-Get-AzBatchAccount -ResourceGroupName "CmdletExampleRG"

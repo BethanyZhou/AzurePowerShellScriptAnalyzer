@@ -1,2 +1,0 @@
-
-Get-AzCognitiveServicesAccountType -TypeName Face

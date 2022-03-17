@@ -1,4 +1,0 @@
-
-$prop = @{
-
-New-AzResource @prop

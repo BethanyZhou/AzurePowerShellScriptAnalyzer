@@ -1,2 +1,0 @@
-
-Get-AzTag -Name "Department"

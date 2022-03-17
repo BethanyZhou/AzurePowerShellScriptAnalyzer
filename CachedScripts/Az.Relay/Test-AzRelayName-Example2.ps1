@@ -1,2 +1,0 @@
-
-Test-AzRelayName -Namespace Testi

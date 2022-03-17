@@ -1,2 +1,0 @@
-
-Get-AzEventGridSubscription -EventSubscriptionName EventSubscription1

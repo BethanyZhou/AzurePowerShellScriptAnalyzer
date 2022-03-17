@@ -1,2 +1,0 @@
-
-Test-AzCommunicationServiceNameAvailability -Name ContosoAcsResource2

@@ -1,2 +1,0 @@
-
-New-AzStorageQueue -Name "queueabc"

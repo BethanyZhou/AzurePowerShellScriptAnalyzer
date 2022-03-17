@@ -1,2 +1,0 @@
-
-Remove-AzDeploymentManagerService -InputObject $serviceObject

@@ -1,2 +1,0 @@
-
-Test-AzVMwareLocationQuotaAvailability -Location centralus

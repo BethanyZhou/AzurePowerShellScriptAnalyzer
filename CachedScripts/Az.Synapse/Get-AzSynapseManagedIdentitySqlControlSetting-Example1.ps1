@@ -1,2 +1,0 @@
-
-Get-AzSynapseManagedIdentitySqlControlSetting -WorkspaceName ContosoWorkspace

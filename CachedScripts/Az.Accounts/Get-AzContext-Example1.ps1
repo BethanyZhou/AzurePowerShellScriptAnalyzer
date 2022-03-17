@@ -1,4 +1,0 @@
-
-Connect-AzAccount
-
-Get-AzContext

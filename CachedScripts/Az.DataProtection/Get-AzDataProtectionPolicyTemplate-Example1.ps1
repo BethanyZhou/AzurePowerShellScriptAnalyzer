@@ -1,2 +1,0 @@
-
-Get-AzDataProtectionPolicyTemplate -DatasourceType AzureDisk

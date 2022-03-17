@@ -1,2 +1,0 @@
-
-Get-AzGallery -Name gallery*

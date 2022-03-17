@@ -1,4 +1,0 @@
-
-$parameters = @{
-
-New-AzExpressRoutePortIdentity @parameters

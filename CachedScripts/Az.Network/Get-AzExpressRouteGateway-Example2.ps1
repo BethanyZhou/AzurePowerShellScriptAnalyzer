@@ -1,2 +1,0 @@
-
-Get-AzExpressRouteGateway -Name test*

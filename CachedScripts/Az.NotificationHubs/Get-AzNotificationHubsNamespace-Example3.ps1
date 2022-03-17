@@ -1,2 +1,0 @@
-
-Get-AzNotificationHubsNamespace -ResourceGroup "ContosoNotificationsGroup"

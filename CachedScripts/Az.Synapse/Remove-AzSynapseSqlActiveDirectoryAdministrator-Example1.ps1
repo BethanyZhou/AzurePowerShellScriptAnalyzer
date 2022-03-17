@@ -1,2 +1,0 @@
-
-Remove-AzSynapseSqlActiveDirectoryAdministrator -WorkspaceName ContosoWorkspace

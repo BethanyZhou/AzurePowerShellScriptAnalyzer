@@ -1,2 +1,0 @@
-
-Get-AzDataShareReceivedInvitation -location "westus"

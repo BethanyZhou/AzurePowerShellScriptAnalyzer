@@ -1,2 +1,0 @@
-
-Get-AzManagedCassandraCluster -ResourceId {resourceId}

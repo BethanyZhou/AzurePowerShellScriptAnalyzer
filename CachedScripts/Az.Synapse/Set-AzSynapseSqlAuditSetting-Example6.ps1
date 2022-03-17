@@ -1,2 +1,0 @@
-
-Set-AzSynapseSqlAuditSetting -WorkspaceName ContosoWorkspace -EventHubTargetState Disabled

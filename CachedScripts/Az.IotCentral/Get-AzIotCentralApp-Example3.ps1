@@ -1,2 +1,0 @@
-
-Get-AzIotCentralApp -ResourceGroupName "MyResourceGroupName"

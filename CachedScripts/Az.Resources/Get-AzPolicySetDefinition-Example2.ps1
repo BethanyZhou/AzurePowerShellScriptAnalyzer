@@ -1,2 +1,0 @@
-
-Get-AzPolicySetDefinition -Name 'VMPolicySetDefinition'

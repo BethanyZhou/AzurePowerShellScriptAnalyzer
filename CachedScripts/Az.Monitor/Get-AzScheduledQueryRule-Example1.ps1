@@ -1,2 +1,0 @@
-
-Get-AzScheduledQueryRule -ResourceGroupName "MyResourceGroup"

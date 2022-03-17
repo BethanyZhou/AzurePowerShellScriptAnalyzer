@@ -1,2 +1,0 @@
-
-New-AzADApplication -SigninAudience AzureADandPersonalMicrosoftAccount

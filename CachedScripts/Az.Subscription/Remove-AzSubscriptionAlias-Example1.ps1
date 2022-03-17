@@ -1,2 +1,0 @@
-
-Remove-AzSubscriptionAlias -AliasName "ExistingAliasName"

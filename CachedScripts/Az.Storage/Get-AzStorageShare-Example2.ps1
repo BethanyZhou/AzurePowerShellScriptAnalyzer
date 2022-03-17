@@ -1,2 +1,0 @@
-
-Get-AzStorageShare -Prefix "Contoso"

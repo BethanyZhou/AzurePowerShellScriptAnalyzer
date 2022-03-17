@@ -1,2 +1,0 @@
-
-Get-AzTimeSeriesInsightsEventSource -ResourceGroupName testgroup -EnvironmentName tsitest001

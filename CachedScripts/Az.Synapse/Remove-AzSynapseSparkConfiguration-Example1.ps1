@@ -1,2 +1,0 @@
-
-Remove-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace -Name ContosoSparkConfiguration

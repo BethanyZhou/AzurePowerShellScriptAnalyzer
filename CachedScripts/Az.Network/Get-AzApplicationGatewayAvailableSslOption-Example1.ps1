@@ -1,2 +1,0 @@
-
-$sslOptions = Get-AzApplicationGatewayAvailableSslOption

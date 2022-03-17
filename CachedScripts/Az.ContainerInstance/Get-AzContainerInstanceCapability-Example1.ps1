@@ -1,2 +1,0 @@
-
-Get-AzContainerInstanceCapability -Location eastus

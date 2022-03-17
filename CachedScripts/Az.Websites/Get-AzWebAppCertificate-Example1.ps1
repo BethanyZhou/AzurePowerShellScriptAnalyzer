@@ -1,2 +1,0 @@
-
-Get-AzWebAppCertificate -ResourceGroupName "ContosoResourceGroup"

@@ -1,2 +1,0 @@
-
-Get-AzPeerAsn -Name Contoso

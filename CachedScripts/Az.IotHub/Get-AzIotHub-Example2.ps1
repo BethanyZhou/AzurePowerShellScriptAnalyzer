@@ -1,2 +1,0 @@
-
-Get-AzIotHub -ResourceGroupName "myresourcegroup"

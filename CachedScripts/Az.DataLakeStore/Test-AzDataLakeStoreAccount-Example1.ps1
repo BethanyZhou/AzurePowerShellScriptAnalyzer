@@ -1,2 +1,0 @@
-
-Test-AzDataLakeStoreAccount -Name "ContosoADL"

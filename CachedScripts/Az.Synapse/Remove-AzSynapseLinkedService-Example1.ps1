@@ -1,2 +1,0 @@
-
-Remove-AzSynapseLinkedService -WorkspaceName ContosoWorkspace -Name ContosoLinkedService

@@ -1,2 +1,0 @@
-
-New-AzCognitiveServicesObject -Type DeploymentProperties

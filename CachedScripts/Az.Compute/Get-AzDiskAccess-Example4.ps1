@@ -1,2 +1,0 @@
-
-Get-AzDiskAccess -Name DiskAccessMicrosoft*

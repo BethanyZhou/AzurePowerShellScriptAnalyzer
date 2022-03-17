@@ -1,2 +1,0 @@
-
-Get-AzEventGridTopic -ResourceGroup MyResourceGroupName

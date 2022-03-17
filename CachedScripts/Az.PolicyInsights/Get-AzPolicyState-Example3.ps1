@@ -1,2 +1,0 @@
-
-Get-AzPolicyState -All

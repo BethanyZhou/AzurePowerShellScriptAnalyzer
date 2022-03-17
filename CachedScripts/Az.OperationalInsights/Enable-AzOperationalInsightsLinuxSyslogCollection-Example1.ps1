@@ -1,2 +1,0 @@
-
-Enable-AzOperationalInsightsLinuxSyslogCollection -ResourceGroupName yuzhi-rg -WorkspaceName OperationalInsight

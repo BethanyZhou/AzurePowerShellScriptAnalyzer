@@ -1,2 +1,0 @@
-
-Remove-AzDataLakeAnalyticsAccount -Name "ContosoAdlAccount"

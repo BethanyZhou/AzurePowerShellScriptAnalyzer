@@ -1,2 +1,0 @@
-
-Remove-AzRecoveryServicesAsrvCenterServer -InputObject $vCenter

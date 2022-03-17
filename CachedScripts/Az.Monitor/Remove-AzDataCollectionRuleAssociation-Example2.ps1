@@ -1,2 +1,0 @@
-
-$dcrAssoc | Remove-AzDataCollectionRule

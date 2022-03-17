@@ -1,2 +1,0 @@
-
-Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName

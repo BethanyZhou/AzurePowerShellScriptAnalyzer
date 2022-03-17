@@ -1,2 +1,0 @@
-
-Get-AzADServicePrincipal -ApplicationId $appId

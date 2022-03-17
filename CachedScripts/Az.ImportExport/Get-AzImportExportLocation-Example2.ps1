@@ -1,2 +1,0 @@
-
-Get-AzImportExportLocation -Name eastus

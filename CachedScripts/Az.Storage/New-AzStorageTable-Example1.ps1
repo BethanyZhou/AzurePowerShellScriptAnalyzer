@@ -1,2 +1,0 @@
-
-New-AzStorageTable -Name "tableabc"

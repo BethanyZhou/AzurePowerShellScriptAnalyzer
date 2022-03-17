@@ -1,2 +1,0 @@
-
-Get-AzDeploymentManagerArtifactSource -InputObject $artifactSourceObject

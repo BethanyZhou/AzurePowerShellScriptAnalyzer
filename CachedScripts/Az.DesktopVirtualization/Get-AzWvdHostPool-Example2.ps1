@@ -1,2 +1,0 @@
-
-Get-AzWvdHostPool -ResourceGroupName ResourceGroupName

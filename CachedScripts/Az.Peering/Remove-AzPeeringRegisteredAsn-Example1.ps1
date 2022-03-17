@@ -1,2 +1,0 @@
-
-Remove-AzPeeringRegisteredAsn -ResourceId $resourceId

@@ -1,2 +1,0 @@
-
-Test-AzPowerBIEmbeddedCapacity -Name "testcapacity"

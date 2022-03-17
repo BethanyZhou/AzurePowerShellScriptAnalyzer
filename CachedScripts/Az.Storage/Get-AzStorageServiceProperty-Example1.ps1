@@ -1,2 +1,0 @@
-
-Get-AzStorageServiceProperty -ServiceType Blob

@@ -1,2 +1,0 @@
-
-Stop-AzDataMigrationService -ResourceGroupName MyResourceGroup -ServiceName TestService

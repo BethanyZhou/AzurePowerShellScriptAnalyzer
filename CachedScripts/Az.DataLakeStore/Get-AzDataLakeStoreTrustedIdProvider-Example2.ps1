@@ -1,2 +1,0 @@
-
-Get-AzDataLakeStoreTrustedIdProvider -AccountName "ContosoADL"

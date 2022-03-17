@@ -1,2 +1,0 @@
-
-Disable-AzContextAutosave -Scope Process

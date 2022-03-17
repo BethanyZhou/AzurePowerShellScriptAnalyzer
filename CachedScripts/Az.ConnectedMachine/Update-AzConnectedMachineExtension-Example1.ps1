@@ -1,4 +1,0 @@
-
-$splat = @{
-
-Update-AzConnectedMachineExtension @splat

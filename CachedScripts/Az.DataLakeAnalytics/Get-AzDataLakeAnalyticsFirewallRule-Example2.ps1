@@ -1,2 +1,0 @@
-
-Get-AzDataLakeAnalyticsFirewallRule -Account "ContosoAdlAcct"

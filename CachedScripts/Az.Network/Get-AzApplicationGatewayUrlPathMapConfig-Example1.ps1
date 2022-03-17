@@ -1,2 +1,0 @@
-
-Get-AzApplicationGatewayUrlPathMapConfig -ApplicationGateway Gateway

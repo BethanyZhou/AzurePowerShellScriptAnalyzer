@@ -1,2 +1,0 @@
-
-Get-AzMySqlFlexibleServerLocationBasedCapability -Location westus2

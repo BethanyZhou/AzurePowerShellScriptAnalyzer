@@ -1,2 +1,0 @@
-
-Get-AzDiskPoolResourceSku -Location AustraliaEast

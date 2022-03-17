@@ -1,2 +1,0 @@
-
-Get-AzSynapseSparkConfiguration -WorkspaceName ContosoWorkspace

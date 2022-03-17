@@ -1,2 +1,0 @@
-
-Get-AzStorageContainer -Name container*

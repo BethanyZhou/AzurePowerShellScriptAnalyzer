@@ -1,2 +1,0 @@
-
-Test-AzAppConfigurationStoreNameAvailability -Name appconfig-test01

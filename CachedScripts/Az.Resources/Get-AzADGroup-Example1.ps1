@@ -1,2 +1,0 @@
-
-Get-AzADGroup -DisplayName $gname

@@ -1,2 +1,0 @@
-
-Remove-AzSynapseKustoPoolDatabasePrincipalAssignment -ResourceGroupName testrg -WorkspaceName testws -DatabaseName mykustodatabase -PrincipalAssignmentName kustoprincipal1

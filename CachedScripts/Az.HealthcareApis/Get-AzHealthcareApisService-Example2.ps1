@@ -1,2 +1,0 @@
-
-Get-AzHealthcareApisService -ResourceGroupName "MyResourceGroup"

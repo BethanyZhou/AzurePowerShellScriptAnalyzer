@@ -1,2 +1,0 @@
-
-Get-AzContainerInstanceCachedImage -Location eastus

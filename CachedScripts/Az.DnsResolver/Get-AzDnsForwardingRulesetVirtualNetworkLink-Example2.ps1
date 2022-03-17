@@ -1,2 +1,0 @@
-
-Get-AzDnsResolverVirtualNetworkLink -DnsForwardingRulesetName pstestdnsresolvername -Name samplevnetLink1 -ResourceGroupName powershell-test-rg

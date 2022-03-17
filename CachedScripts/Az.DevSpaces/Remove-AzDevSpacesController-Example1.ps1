@@ -1,2 +1,0 @@
-
-Remove-AzDevSpacesController -ResourceGroupName devSpaceResourceGroup -Name devSpaceControllerName

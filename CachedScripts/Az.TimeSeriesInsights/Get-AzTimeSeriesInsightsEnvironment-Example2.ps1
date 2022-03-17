@@ -1,2 +1,0 @@
-
-Get-AzTimeSeriesInsightsEnvironment -ResourceGroupName testgroup

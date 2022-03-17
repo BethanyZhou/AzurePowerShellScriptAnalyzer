@@ -1,2 +1,0 @@
-
-Get-AzSynapseRoleScope -WorkspaceName ContosoWorkspace

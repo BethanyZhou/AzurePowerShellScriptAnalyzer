@@ -1,2 +1,0 @@
-
-Disable-AzOperationalInsightsLinuxSyslogCollection -ResourceGroupName yuzhi-rg -WorkspaceName OperationalInsights-1

@@ -1,2 +1,0 @@
-
-$Policy = Get-AzRecoveryServicesAsrPolicy

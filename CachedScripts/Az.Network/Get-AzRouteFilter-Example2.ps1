@@ -1,2 +1,0 @@
-
-Get-AzRouteFilter -Name "RouteFilter*"

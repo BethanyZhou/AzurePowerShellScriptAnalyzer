@@ -1,2 +1,0 @@
-
-New-AzFirewallPolicyIntrusionDetection -Mode "Alert"

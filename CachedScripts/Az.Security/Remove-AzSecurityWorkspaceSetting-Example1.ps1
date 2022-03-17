@@ -1,2 +1,0 @@
-
-Remove-AzSecurityWorkspaceSetting -Name "default"

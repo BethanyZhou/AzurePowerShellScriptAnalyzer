@@ -1,2 +1,0 @@
-
-Remove-AzExpressRoutePort -InputObject $erPort

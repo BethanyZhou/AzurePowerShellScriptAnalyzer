@@ -1,2 +1,0 @@
-
-New-AzDigitalTwinsCheckNameRequestObject -name youriTestName

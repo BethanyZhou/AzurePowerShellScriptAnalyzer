@@ -1,2 +1,0 @@
-
-Remove-AzConnectedNetworkVendor -Name MyVendor

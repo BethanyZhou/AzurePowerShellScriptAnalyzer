@@ -1,2 +1,0 @@
-
-Get-AzAccessToken -ResourceTypeName MSGraph

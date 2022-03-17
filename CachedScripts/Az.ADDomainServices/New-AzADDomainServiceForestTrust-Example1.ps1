@@ -1,2 +1,0 @@
-
-New-AzADDomainServiceForestTrust -FriendlyName FriendlyNameTest

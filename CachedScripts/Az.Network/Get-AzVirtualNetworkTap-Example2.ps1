@@ -1,2 +1,0 @@
-
-Get-AzVirtualNetworkTap -Name "VirtualTap*"

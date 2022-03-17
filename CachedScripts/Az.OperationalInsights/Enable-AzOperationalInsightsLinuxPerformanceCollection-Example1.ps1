@@ -1,2 +1,0 @@
-
-Enable-AzOperationalInsightsLinuxPerformanceCollection -ResourceGroupName yuzhi-rg -WorkspaceName OperationalInsight

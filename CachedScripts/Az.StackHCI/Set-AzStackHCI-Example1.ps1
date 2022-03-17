@@ -1,2 +1,0 @@
-
-Set-AzStackHCI -EnableWSSubscription $true

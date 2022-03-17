@@ -1,2 +1,0 @@
-
-Get-AzManagedApplicationDefinition -ResourceGroupName "MyRG"

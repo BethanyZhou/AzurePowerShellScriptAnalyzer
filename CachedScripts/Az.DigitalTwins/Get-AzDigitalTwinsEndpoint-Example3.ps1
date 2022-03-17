@@ -1,4 +1,0 @@
-
-$GetAzDigitalTwinsEndpoint = Get-AzDigitalTwinsEndpoint -EndpointName youriDigitalTwinEndpoint -ResourceGroupName youritemp -ResourceName youriDigitalTwinsTest
-
-Get-AzDigitalTwinsEndpoint -InputObject $GetAzDigitalTwinsEndpoint

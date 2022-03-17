@@ -1,2 +1,0 @@
-
-Start-AzRecoveryServicesAsrCancelFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem

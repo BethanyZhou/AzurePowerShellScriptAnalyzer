@@ -1,2 +1,0 @@
-
-Remove-AzTenantDeployment -Name "RolesDeployment"

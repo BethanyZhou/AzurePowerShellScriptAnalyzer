@@ -1,4 +1,0 @@
-
-$SentinelConnection = @{
-
-Get-AzSentinelIncident @SentinelConnection

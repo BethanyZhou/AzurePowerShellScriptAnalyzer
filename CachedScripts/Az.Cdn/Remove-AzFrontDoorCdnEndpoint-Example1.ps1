@@ -1,2 +1,0 @@
-
-Remove-AzFrontDoorCdnEndpoint -ResourceId $endpointResourceId

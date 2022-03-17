@@ -1,2 +1,0 @@
-
-Get-AzPrivateEndpoint -ResourceGroupName TestResourceGroup

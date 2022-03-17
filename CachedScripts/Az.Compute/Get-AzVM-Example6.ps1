@@ -1,2 +1,0 @@
-
-Get-AzVM -Name test*

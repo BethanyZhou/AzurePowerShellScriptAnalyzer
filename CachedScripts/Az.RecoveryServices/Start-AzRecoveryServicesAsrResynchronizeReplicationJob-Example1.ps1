@@ -1,2 +1,0 @@
-
-Start-AzRecoveryServicesAsrResynchronizeReplicationJob -ReplicationProtectedItem $rpi

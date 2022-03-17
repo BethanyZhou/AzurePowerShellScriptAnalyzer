@@ -1,2 +1,0 @@
-
-New-AzOperationalInsightsWindowsPerformanceCounterDataSource -ResourceGroupName testrg -WorkspaceName LogAnalyticsWorkspace -Name performance1 -ObjectName object -CounterName counters

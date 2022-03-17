@@ -1,2 +1,0 @@
-
-Get-AzSynapseSqlScript -workspaceName ContosoWorkspace

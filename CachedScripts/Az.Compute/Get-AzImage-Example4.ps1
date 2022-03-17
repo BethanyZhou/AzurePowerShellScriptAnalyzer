@@ -1,2 +1,0 @@
-
-Get-AzImage -Name "Image*"

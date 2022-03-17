@@ -1,2 +1,0 @@
-
-Enable-AzDataLakeStoreKeyVault -Name "ContosoADLS"

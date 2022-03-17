@@ -1,2 +1,0 @@
-
-Get-AzCostManagementExport -Scope 'subscriptions/**********'

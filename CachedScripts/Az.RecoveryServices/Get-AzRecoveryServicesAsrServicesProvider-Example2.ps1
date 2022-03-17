@@ -1,2 +1,0 @@
-
-Get-AzRecoveryServicesAsrServicesProvider -Fabric $Fabric

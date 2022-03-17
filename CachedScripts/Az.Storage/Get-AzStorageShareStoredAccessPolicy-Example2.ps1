@@ -1,2 +1,0 @@
-
-Get-AzStorageShareStoredAccessPolicy -ShareName "ContosoShare"

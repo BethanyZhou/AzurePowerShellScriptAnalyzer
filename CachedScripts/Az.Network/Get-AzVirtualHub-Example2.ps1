@@ -1,2 +1,0 @@
-
-Get-AzVirtualHub -Name westushub*

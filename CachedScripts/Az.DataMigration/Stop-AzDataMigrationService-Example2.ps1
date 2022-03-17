@@ -1,2 +1,0 @@
-
-Stop-AzDataMigrationService -InputObject $TestService

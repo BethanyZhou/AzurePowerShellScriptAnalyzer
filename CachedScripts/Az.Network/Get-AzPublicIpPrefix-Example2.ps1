@@ -1,2 +1,0 @@
-
-Get-AzPublicIpPrefix -Name myPublicIpPrefix*

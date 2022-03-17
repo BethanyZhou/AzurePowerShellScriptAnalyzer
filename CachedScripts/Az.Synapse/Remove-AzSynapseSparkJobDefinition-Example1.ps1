@@ -1,2 +1,0 @@
-
-Remove-AzSynapseSparkJobDefinition -WorkspaceName ContosoWorkspace -Name ContosoSparkJobDefinition

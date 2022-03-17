@@ -1,2 +1,0 @@
-
-Get-AzADApplication -DisplayNameStartsWith $prefix

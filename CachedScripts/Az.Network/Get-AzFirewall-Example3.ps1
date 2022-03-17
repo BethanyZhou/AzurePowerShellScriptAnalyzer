@@ -1,2 +1,0 @@
-
-Get-AzFirewall -Name azFw*

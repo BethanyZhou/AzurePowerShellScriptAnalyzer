@@ -1,2 +1,0 @@
-
-Get-AzMlWebService -ResourceGroupName "myresourcegroup"

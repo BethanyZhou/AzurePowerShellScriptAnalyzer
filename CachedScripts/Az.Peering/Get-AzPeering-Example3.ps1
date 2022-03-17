@@ -1,2 +1,0 @@
-
-Get-AzPeering -ResourceId $resourceId

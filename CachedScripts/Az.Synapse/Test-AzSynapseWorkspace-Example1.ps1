@@ -1,2 +1,0 @@
-
-Test-AzSynapseWorkspace -Name ContosoWorkspace

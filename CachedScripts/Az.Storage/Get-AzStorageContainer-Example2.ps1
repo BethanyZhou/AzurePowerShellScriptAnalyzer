@@ -1,2 +1,0 @@
-
-Get-AzStorageContainer -Prefix "container"

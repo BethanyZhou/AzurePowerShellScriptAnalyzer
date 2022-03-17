@@ -1,2 +1,0 @@
-
-Get-AzVpnGateway -Name test*

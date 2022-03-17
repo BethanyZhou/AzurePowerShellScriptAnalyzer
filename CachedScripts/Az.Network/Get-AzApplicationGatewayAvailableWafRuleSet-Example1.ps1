@@ -1,2 +1,0 @@
-
-$availableRuleSets = Get-AzApplicationGatewayAvailableWafRuleSet

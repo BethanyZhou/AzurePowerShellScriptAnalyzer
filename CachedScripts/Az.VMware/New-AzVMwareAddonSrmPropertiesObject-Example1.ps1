@@ -1,2 +1,0 @@
-
-New-AzVMwareAddonSrmPropertiesObject -LicenseKey "YourLicenseKeyValue"

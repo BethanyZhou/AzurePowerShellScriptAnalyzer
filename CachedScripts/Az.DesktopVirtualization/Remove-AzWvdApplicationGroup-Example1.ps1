@@ -1,2 +1,0 @@
-
-Remove-AzWvdApplicationGroup -ResourceGroupName ResourceGroupName -Name ApplicationGroupName

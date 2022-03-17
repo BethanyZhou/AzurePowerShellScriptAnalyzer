@@ -1,2 +1,0 @@
-
-Get-AzMlCommitmentPlan -ResourceGroupName "MyResourceGroup"

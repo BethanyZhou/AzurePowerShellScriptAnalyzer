@@ -1,2 +1,0 @@
-
-Remove-AzTag -Name "Department"

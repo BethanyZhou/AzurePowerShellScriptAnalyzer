@@ -1,2 +1,0 @@
-
-Get-AzMaintenancePublicConfiguration -ResourceGroupName smdtest -Name workervmscentralus

@@ -1,2 +1,0 @@
-
-Get-AzCdnProfile -ResourceGroupName myresourcegroup

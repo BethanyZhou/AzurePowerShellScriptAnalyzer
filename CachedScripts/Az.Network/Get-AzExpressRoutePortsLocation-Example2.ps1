@@ -1,2 +1,0 @@
-
-Get-AzExpressRoutePortsLocation -LocationName $loc

@@ -1,2 +1,0 @@
-
-Get-AzADAppCredential -DisplayName $name

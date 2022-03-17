@@ -1,2 +1,0 @@
-
-Remove-AzADUser -DisplayName $name

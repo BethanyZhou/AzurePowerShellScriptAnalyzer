@@ -1,2 +1,0 @@
-
-Get-AzStorageCORSRule -ServiceType Blob

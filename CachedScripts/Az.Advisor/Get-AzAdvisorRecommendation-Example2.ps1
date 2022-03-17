@@ -1,2 +1,0 @@
-
-Get-AzAdvisorRecommendation -Category Performance
