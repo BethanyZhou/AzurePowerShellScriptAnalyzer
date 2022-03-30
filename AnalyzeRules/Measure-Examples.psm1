@@ -11,7 +11,7 @@ $UNASSIGNED_VARIABLE = "Unassigned_Variable"
 $MISSING_VALUE_FOR_PARAMETER = "Missing_Value_For_Parameter"
 $POSITIONAL_PARAMETER_BINDING_FAILED = "Positional_Parameter_Binding_Failed"
 
-$MISMATCH_VALUE_TYPE_FOR_PARAMETER = "Mismatch_Value_TYPE_For_Parameter" 
+$MISMATCH_VALUE_TYPE_FOR_PARAMETER = "Mismatch_Value_Type_For_Parameter" 
 
 <#
 Detect alias or unrecognized cmdlet
@@ -25,10 +25,6 @@ function Measure-CommandName {
         [System.Management.Automation.Language.ScriptBlockAst]
         $ScriptBlockAst
     )
-
-    begin {}
-
-    process {
         $Results = @()
         $global:CommandParameterPair = @()
         $global:Ast = $null
@@ -110,9 +106,6 @@ function Measure-CommandName {
             $Results += $Result
             return $Results
         }
-    }
-
-    end {}
 }
 
 function Measure-WrongParameterNameAndValue {
@@ -125,9 +118,6 @@ function Measure-WrongParameterNameAndValue {
         $ScriptBlockAst
     )
 
-    begin {}
-
-    process {
         $Results = @()
         $global:CommandParameterPair = @()
         $global:Ast = $null
@@ -554,9 +544,6 @@ function Measure-WrongParameterNameAndValue {
             $Results += $Result
             return $Results
         }
-    }
-
-    end {}
 }
 
 function Get-ActualVariableValue {

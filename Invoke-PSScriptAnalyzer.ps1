@@ -79,7 +79,7 @@ foreach($script in $scripts)
 
 # Clean caches
 if($CleanCache.IsPresent){
-    $scripts = Get-Item -Path "$DefaultCachePath" -Recurse -Include *.ps1 -File
+    $scripts = Get-ChildItem -Path "$DefaultCachePath" -Recurse -Include *.ps1 -File
     $scripts | Remove-Item -Force 
 }
 
