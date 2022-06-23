@@ -12,39 +12,43 @@ param (
     [string[]]$RulePaths,
     [switch]$Recurse,
     [switch]$IncludeDefaultRules,
-    [string]$OutputPath = "output",
+    [string]$OutputFolder = "output",
     [Parameter(ParameterSetName = "Markdown")]
     [switch]$AnalyzeScriptsInFile,
     [Parameter(ParameterSetName = "Markdown")]
     [switch]$OutputScriptsInFile,
-    [Parameter(ParameterSetName = "Markdown")]
-    [switch]$CleanCache,
-    [switch]$OutputResultsByModule
+    [switch]$OutputResultsByModule,
+    [switch]$CleanScripts
 )
 
 . $PSScriptRoot\utils.ps1
 
 if ($PSCmdlet.ParameterSetName -eq "Markdown") {
-    $ScriptsByExamplePath = ".\ScriptsByExample"
+    $ScriptsByExampleFolder = "ScriptsByExample"
     $scaleTable = @()
     $missingTable = @()
     $deletePromptAndSeparateOutputTable = @()
 }
 $analysisResultsTable = @()
-$null = New-Item -ItemType Directory -Path $OutputPath -ErrorAction SilentlyContinue
+$null = New-Item -ItemType Directory -Path $OutputFolder -ErrorAction SilentlyContinue
+# Clean caches
+if ($OutputScriptsInFile.IsPresent) {
+    Remove-Item $OutputFolder\$ScriptsByExampleFolder -Recurse -ErrorAction SilentlyContinue
+}
+Remove-Item $OutputFolder\*.csv -Recurse -ErrorAction SilentlyContinue
 
 if ($PSCmdlet.ParameterSetName -eq "Markdown") {
-    @() + (Get-Item $MarkdownPaths) + (Get-ChildItem $MarkdownPaths -Recurse:$Recurse.IsPresent -Attributes Directory) | foreach {
+    @() + (Get-Item $MarkdownPaths) + (Get-ChildItem $MarkdownPaths -Recurse:$Recurse.IsPresent -Attributes Directory -Filter help) + (Get-ChildItem $MarkdownPaths -Recurse:$Recurse.IsPresent -Attributes Directory -Filter Az.*) | foreach {
         # Parent folder name
-        $module = (Get-Item $_).Name -eq "help" ? (Get-ChildItem $_.Parent -Attributes !Directory -Filter *.psd1)[0].BaseName : (Get-Item $_).Name
-        Get-ChildItem $_ -Attributes !Directory -Filter *.md | foreach {
+        $module = $_.Name -eq "help" ? (Get-ChildItem $_.Parent -Attributes !Directory -Filter *.psd1)[0].BaseName : $_.Name
+        Get-ChildItem $_.FullName -Attributes !Directory -Filter *.md | foreach {
             # exclude Az.*.md and README.md
-            if ($_.BaseName -match "^[A-Z]\w+-[A-Z]\w+") {
-                Write-Output "Searching in file $($_.Name) ..."
+            if ($_.BaseName -cmatch "^[A-Z][a-z]+-([A-Z][a-z0-9]*)+$" -and $_.Directory.Name -cmatch "^help$|^Az\.\w+$") {
+                Write-Output "Searching in file $($_.FullName) ..."
                 $cmdlet = $_.BaseName
                 $result = Measure-SectionMissingAndOutputScript $module $cmdlet $_.FullName `
                     -OutputScriptsInFile:$OutputScriptsInFile.IsPresent `
-                    -OutputPath $OutputPath\$ScriptsByExamplePath
+                    -OutputFolder $OutputFolder\$ScriptsByExampleFolder
                 $scaleTable += $result.Scale
                 $missingTable += $result.Missing
                 $deletePromptAndSeparateOutputTable += $result.DeletePromptAndSeparateOutput
@@ -52,34 +56,42 @@ if ($PSCmdlet.ParameterSetName -eq "Markdown") {
         }
     }
     if ($AnalyzeScriptsInFile.IsPresent) {
-        $ScriptPaths = "$OutputPath\$ScriptsByExamplePath"
+        $ScriptPaths = "$OutputFolder\$ScriptsByExampleFolder"
     }
+    # Summarize analysis results
+    $scaleTable | Export-Csv "$OutputFolder\Scale.csv" -NoTypeInformation
+    $missingTable | where {$_ -ne $null} | Export-Csv "$OutputFolder\Missing.csv" -NoTypeInformation
+    $deletePromptAndSeparateOutputTable | where {$_ -ne $null} | Export-Csv "$OutputFolder\DeletingSeparating.csv" -NoTypeInformation
 }
 if ($PSCmdlet.ParameterSetName -eq "Script" -or $AnalyzeScriptsInFile.IsPresent) {
     # Analyze codes
     $analysisResultsTable = @()
-    @() + (Get-Item $ScriptPaths) + (Get-ChildItem $ScriptPaths -Recurse:$Recurse.IsPresent -Attributes Directory) | foreach {
+    $ScriptFilesPaths = $ScriptPaths | where {Test-Path $_ -PathType Leaf}
+    if ($ScriptFilesPaths -ne $null) {
+        $ScriptFiles = Get-Item $ScriptFilesPaths
+    }
+    $ScriptFoldersPaths = $ScriptPaths | where {Test-Path $_ -PathType Container}
+    if ($ScriptFoldersPaths -ne $null) {
+        $ScriptFolders = @() + (Get-Item $ScriptFoldersPaths) + (Get-ChildItem $ScriptFoldersPaths -Recurse:$Recurse.IsPresent -Attributes Directory)
+    }
+    @() + $ScriptFiles + $ScriptFolders | where {$_ -ne $null} | foreach {
         # Parent folder name
-        $module = (Get-Item $_).Name
+        $module = $_.Name
         $analysisResults = @()
-        Get-ChildItem $_ -Attributes !Directory -Filter "*.ps1" -ErrorAction Stop | foreach {
-            Write-Output "Analyzing file $($_.Name) ..."
+        Get-ChildItem $_.FullName -Attributes !Directory -Filter "*.ps1" -ErrorAction Stop | foreach {
+            Write-Output "Analyzing file $($_.FullName) ..."
             $analysisResults += Get-ScriptAnalyzerResult $module $_.FullName $RulePaths -IncludeDefaultRules:$IncludeDefaultRules.IsPresent -ErrorAction Continue
         }
-        if ($OutputResultsByModule.IsPresent) {
-            $analysisResults | where {$_ -ne $null} | Export-Csv "$OutputPath\$module.csv" -NoTypeInformation
+        if ($OutputResultsByModule.IsPresent -and (Get-ChildItem $_.FullName -Attributes !Directory -Filter "*.ps1").Count -ne 0) {
+            $analysisResults | Export-Csv "$OutputFolder\$module.csv" -NoTypeInformation
         }
         $analysisResultsTable += $analysisResults
     }
+    # Summarize analysis results
+    $analysisResultsTable | where {$_ -ne $null} | Export-Csv "$OutputFolder\Results-$(Get-Date -UFormat %s).csv" -NoTypeInformation
 }
 
 # Clean caches
-if ($PSCmdlet.ParameterSetName -eq "Markdown" -and $CleanCache.IsPresent) {
+if ($CleanScripts.IsPresent) {
     Remove-Item $ScriptPaths -Exclude *.csv -Recurse -ErrorAction Continue
 }
-
-# Summarize analysis results
-$scaleTable | Export-Csv "$OutputPath\Scale.csv" -NoTypeInformation
-$missingTable | where {$_ -ne $null} | Export-Csv "$OutputPath\Missing.csv" -NoTypeInformation
-$deletePromptAndSeparateOutputTable | where {$_ -ne $null} | Export-Csv "$OutputPath\DeletingSeparating.csv" -NoTypeInformation
-$analysisResultsTable | where {$_ -ne $null} | Export-Csv "$OutputPath\Results-$(Get-Date -UFormat %s).csv" -NoTypeInformation
